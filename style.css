@@ -91,7 +91,7 @@ img {
 .hero {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 8rem;
     padding: 6rem 0;
 }
 
@@ -230,6 +230,7 @@ img {
     padding: .5em 2em;
     border: none;
     border-radius: var(--br-btn);
+    cursor: pointer;
 }
 
 .btn[data-type="border"] {

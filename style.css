@@ -90,30 +90,40 @@ img {
 
 .hero {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 3rem;
     padding: 6rem 0;
 }
 
 .hero-content {
-    max-width: 52ch;
     text-align: left;
-    text-wrap: balance;
+    text-wrap: pretty;
 }
 
 .hero-title {
     font-family: var(--ff-accent);
     font-size: var(--fs-800);
     font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.hero-title span {
+    width: 31.25ch;
+    font-size: var(--fs-500);
+    display: block;
+    text-align: right;
 }
 
 .hero-desc {
     font-size: var(--fs-500);
+    margin-block: 2rem 2.5rem;
+    line-height: 1.8;
 }
 
 .hero-image {
     width: 480px;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 1;
+    object-fit: cover;
     box-shadow: 8px 10px 8px -5px hsl(215, 28%, 10%);
 }
 
@@ -128,20 +138,33 @@ img {
 
 .card-group {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 24px;
 }
 
 .card {
-    width: 480px;
-    object-position: center;
+    flex: 1;
+    margin-block: 3.5rem;
+    text-align: left;
     box-shadow: 8px 10px 8px -5px hsla(215, 28%, 17%, 0.25);
+}
+
+.card-img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .card-title {
     font-family: var(--ff-accent);
-    font-size: var(--fs-600);
+    font-size: var(--fs-500);
+    margin-block: 1rem 0;
+}
+
+.card-desc {
+    max-width: 22ch;
+    margin-block: 1rem;
+    text-wrap: pretty;
+
 }
 
 /* CITATION */
@@ -162,6 +185,7 @@ img {
     font-family: var(--ff-accent);
     font-size: var(--fs-700);
     font-weight: 800;
+    margin-block: 2rem 0;
     text-align: right;
 }
 
